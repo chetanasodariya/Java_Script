@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    
+    <h1> Welcome to JavaScript Coding </h1>
+
+    <form action="">
+        <input type="text" title="text" placeholder="enter your name" id="myInput">
+    </form>
+
+    <script>
+        let x = document.getElementById("myInput");
+
+        x.addEventListener('focus', myFocusFunction);
+        x.addEventListener('blur', myBlurFunction);
+        x.addEventListener('change', myChangeFunction);
+        x.addEventListener('input', myInputFunction);
+
+        function myFocusFunction() {
+            x.style.background = "yellow";
+        }
+
+        function myBlurFunction() {
+            x.style.background = "white";
+        }
+
+        function myChangeFunction() {
+            console.log("this.value");
+        }
+
+        function myInputFunction() {
+            console.log("this.value");
+        }
+    </script>
+</body>
+</html>

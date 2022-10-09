@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        #box {
+            height: 100px;
+            width: auto;
+            background-color: aqua;
+        }
+
+        #box1 {
+            height: 100px;
+            width: auto;
+            background-color: rebeccapurple;
+        }
+
+        #box2 {
+            height: 100px;
+            width: auto;
+            background-color: yellowgreen;
+        }
+
+        #box3 {
+            height: 100px;
+            width: auto;
+            background-color: rosybrown;
+        }
+
+        #box4 {
+            height: 100px;
+            width: auto;
+            background-color: yellow;
+        }
+
+        #box5 {
+            height: 100px;
+            width: auto;
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1> Welcome to JavaScript Coding </h1>
+
+    <div id="box" onclick="fun()"></div>
+    <div id="box1" oncontextmenu="fun1()"></div>
+    <div id="box2" onmousedown="fun2()"></div>
+    <div id="box3" onmouseup="fun3()"></div>
+    <div id="box4" ondblclick="fun4()"></div>
+    <div id="box5" onmouseover="fun5()"></div>
+    <div id="box5" onmouseout="fun6()"></div>
+
+    <script>
+        function fun() {
+            alert("click event");
+        }
+    </script>
+
+    <script>
+        function fun1() {
+            alert("right click event");
+        }
+    </script>
+
+    <script>
+        function fun2() {
+            alert("mouse down click event");
+        }
+    </script>
+
+    <script>
+        function fun3() {
+            alert("mouse up click event");
+        }
+    </script>
+
+    <script>
+        function fun4() {
+            alert("double click event");
+        }
+    </script>
+
+    <script>
+        function fun5() {
+            alert("mouse over click event");
+        }
+    </script>
+
+    <script>
+        function fun6() {
+            alert("mouse out click event");
+        }
+    </script>
+</body>
+</html>

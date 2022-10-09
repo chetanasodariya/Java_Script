@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    
+    <h1> Welcome to JavaScript Coding </h1>
+
+    <ul id="list">
+        <!-- 1 -->
+        <li>list 1</li>
+        <!-- 2 -->
+        <li>list 2</li>
+        <!-- 3 -->
+        <li>list 3</li>
+        <!-- 4 -->
+        <li>list 4</li>
+        <!-- 5 -->
+    </ul>
+
+    <script>
+        let list1 = document.getElementById("list");
+
+        let item = document.createElement("li");
+        item.textContent = "new list 5";
+
+        let pos = list1.firstElementChild;
+        list1.insertBefore(item, pos);
+
+        let pos1 = list1.firstElementChild.nextElementSibling;
+        list1.insertBefore(item, pos1);
+
+        let pos2 = list1.firstElementChild.nextElementSibling.nextElementSibling;
+        list1.insertBefore(item, pos2);
+
+        let pos3 = list1.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling;
+        list1.insertBefore(item, pos3);
+    </script>
+
+    <script>
+        let parent = document.body;
+
+        let elm = document.createElement("h2");
+        elm.textContent = "this is new element";
+
+        let list2 = document.getElementById("list");
+
+        parent.insertBefore(elm, list2);
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    
+    <h1> Welcome to JavaScript Coding </h1>
+
+    <ul>
+        <li>list 1</li>
+        <li>list 2</li>
+        <li>list 3</li>
+    </ul>
+
+    <h2>heading 1</h2>
+    <div>
+        <p>pragraph 1</p>
+        <h2>heading 2</h2>
+        <p>pragraph 2</p>
+        <h2>heading 3</h2>
+        <p>pragraph 3</p>
+    </div>
+
+    <script>
+        let elm = document.getElementsByTagName("h2");
+        for (let i = 0; i < elm.length; i++) {
+            elm[i].innerHTML = "Hello";
+        }
+
+        let div1 = document.getElementById("div1");
+        let elm1 = div1.getElementsByTagName("p");
+        for (let i = 0; i < elm.length; i++) {
+            elm1[i].innerHTML = "Welcome";
+        }
+    </script>
+
+</body>
+</html>

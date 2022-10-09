@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+</head>
+<body>
+    
+    <h1> Welcome to JavaScript Coding </h1>
+
+    <button id="btn1" type="button">Google</button>
+    <button id="btn2" type="button">yahoo</button>
+    <button id="btn3" type="button">Close</button>
+
+    <script>
+        console.log(window.innerHeight);
+        console.log(window.innerWidth);
+        console.log(window.outerHeight);
+        console.log(window.outerWidth);
+    </script>
+
+    <script>
+        let btn1 = document.getElementById('btn1');
+        let url1 = "https://www.google.com";
+        let features1 = "height=500,width=500";
+        let win;
+        
+        btn1.addEventListener('click', function(){
+            win = window.open(url1, 'google', features1);
+        });
+        
+        let btn2 = document.getElementById('btn2');
+        let url2 = "https://www.yahoo.com";
+        let features2 = "height=500,width=500";
+
+        btn2.addEventListener('click', function(){
+            window.open(url2, 'google', features2);
+        });
+
+        let btn3 = document.getElementById('btn3');
+
+        btn3.addEventListener('click', function(){
+            win.close();
+        });
+    </script>
+
+</body>
+</html>

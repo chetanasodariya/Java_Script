@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    
+    <h1> Welcome to JavaScript Coding </h1>
+
+    <h2>heading 1</h2>
+
+    <ul id="intro1">
+        <li id="intro">list 1</li>
+        <li id="intro2">list 2</li>
+        <li>list 3</li>
+        <li>list 4</li>
+    </ul>
+
+    <ul>
+        <li>list a</li>
+        <li>list b</li>
+        <li>list c</li>
+        <li>list d</li>
+    </ul>
+
+    <script>
+        let elm = document.getElementById("intro");
+        console.log(elm);
+        let prt = elm.parentElement;
+        console.log(prt);
+        prt.innerHTML = "hello world";
+        console.log(prt);
+    </script>
+
+    <script>
+        let elm1 = document.getElementById("intro1");
+        console.log(elm1);
+        let nod = elm1.firstElementChild;
+        console.log(nod);
+        let nod1 = elm1.lastElementChild;
+        console.log(nod1);
+        let nod2 = elm1.children;
+        console.log(nod2);
+    </script>
+
+    <script>
+        let elm2 = document.getElementById("intro2");
+        console.log(elm2);
+        let node3 = elm2.previousElementSibling;
+        console.log(node3);
+        let node4 = elm2.nextElementSibling;
+        console.log(node4);
+    </script>
+
+</body>
+</html>

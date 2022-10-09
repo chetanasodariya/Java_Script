@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        body {
+            padding: 150px;
+            background-color: aquamarine;
+        }
+        #myDiv {
+            padding: 60px;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1> Welcome to JavaScript Coding </h1>
+
+    <div id="myDiv">
+        <button type="button" id="btn">Click Me!</button>
+    </div>
+
+    <script>
+        let a = document.getElementById("myDiv");
+        let b = document.getElementById("btn");
+
+        // b.addEventListener("click", btnClicked);
+        // a.addEventListener("click", divClicked);
+        // document.body.addEventListener("click", bodyClicked);
+
+        // b.addEventListener("click", btnClicked, true);
+        // a.addEventListener("click", divClicked);
+        // document.body.addEventListener("click", bodyClicked);
+
+        // b.addEventListener("click", btnClicked, true);
+        // a.addEventListener("click", divClicked, true);
+        // document.body.addEventListener("click", bodyClicked);
+
+        // b.addEventListener("click", btnClicked, true);
+        // a.addEventListener("click", divClicked, true);
+        // document.body.addEventListener("click", bodyClicked, true);
+
+        // b.addEventListener("click", btnClicked, true);
+        // a.addEventListener("click", divClicked);
+        // document.body.addEventListener("click", bodyClicked, true);
+
+        // b.addEventListener("click", btnClicked);
+        // a.addEventListener("click", divClicked, true);
+        // document.body.addEventListener("click", bodyClicked, true);
+
+        b.addEventListener("click", btnClicked);
+        a.addEventListener("click", divClicked);
+        document.body.addEventListener("click", bodyClicked);
+
+        // function btnClicked() {
+        //     console.log("button Clicked....");
+        // }
+
+        // function divClicked() {
+        //     console.log("div Clicked....");
+        // }
+
+        // function bodyClicked() {
+        //     console.log("body Clicked....");
+        // }
+
+        // function btnClicked(event) {
+        //     console.log("button Clicked....");
+        //     event.stopPropagation();
+        // }
+
+        // function divClicked() {
+        //     console.log("div Clicked....");
+        // }
+
+        // function bodyClicked() {
+        //     console.log("body Clicked....");
+        // }
+
+        function btnClicked(event) {
+            console.log("button Clicked....");
+            event.stopPropagation();
+        }
+
+        function divClicked(event) {
+            console.log("div Clicked....");
+            event.stopPropagation();
+        }
+
+        function bodyClicked() {
+            console.log("body Clicked....");
+        }
+    </script>
+</body>
+</html>
