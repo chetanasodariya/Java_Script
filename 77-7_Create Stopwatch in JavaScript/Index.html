@@ -5,10 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
     
-    <h1> Welcome to JavaScript Coding </h1>
+    <div id="container">
+        
+        <div id="time">
+            <span class="digit" id="hr">00</span>
+            <span class="txt">Hr</span>
+            <span class="digit" id="min">00</span>
+            <span class="txt">Min</span>
+            <span class="digit" id="sec">00</span>
+            <span class="txt">Sec</span>
+            <span class="digit" id="count">00</span>
+        </div>
+
+        <div id="btn-container">
+            <button class="btn" id="start" type="button" onclick="start()">Start</button>
+            <button class="btn" id="stop" type="button" onclick="stop()">Stop</button>
+            <button class="btn" id="resat" type="reset" onclick="resat()">Reset</button>
+        </div>
+
+    </div>
 
     <script src="JS/Script.js"></script>
 </body>

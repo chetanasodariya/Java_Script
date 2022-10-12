@@ -4,12 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript</title>
+    <title>Word Counter in JavaScript</title>
+    <style>
+        body{
+            padding: 0px 100px;
+        }
+        h1{
+            text-align: center;
+            background-color: aquamarine;
+            color: white;
+            padding: 10px;
+            margin: 0px;
+        }
+        #textbox{
+            width: 99.3%;
+            border-color: aquamarine;
+            font-size: 15px;
+        }
+        p{
+            text-align: center;
+            background-color: aquamarine;
+            font-size: 25px;
+            font-weight: bold;
+            color: white;
+            padding: 10px;
+            margin: 0px;
+        }
+    </style>
 </head>
 <body>
     
-    <h1> Welcome to JavaScript Coding </h1>
+    <h1> Word and Character Counter </h1>
 
-    <script src="JS/Script.js"></script>
+    <textarea name="textbox" id="textbox" cols="30" rows="10" title="textbox"></textarea>
+
+    <p>
+        <span>0</span> Words and
+        <span>0</span> Characters Count
+    </p>
+
+    <script>
+        let textbox = document.getElementById("textbox");
+
+        textbox.addEventListener('input', function(){
+            var text = this.value;
+            let char = text.length;
+            document.getElementById("char").innerHTML = char;
+
+            text = text.trim();
+            let worlds = text.split("");
+            let cleanList = world.filter(function(elm){
+                return elm != "";
+            });
+            document.getElementById("world").innerHTML = cleanList.length;
+        });
+    </script>
 </body>
 </html>

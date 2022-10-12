@@ -4,12 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript</title>
+    <title>Background Color Changer in JavaScript</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 20px 100px;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            margin: 0px auto;
+        }
+        p{
+            font-size: 20px;
+            text-align: justify;
+        }
+        .btn{
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border: 2px solid gray;
+            border-radius: 50%;
+        }
+        #white{
+            background-color: white;
+        }
+        #aqua{
+            background-color: aquamarine;
+        }
+        #violet{
+            background-color: violet;
+        }
+        #black{
+            background-color: black;
+        }
+        #color-switcher{
+            text-align: right;
+        }
+    </style>
 </head>
 <body>
-    
-    <h1> Welcome to JavaScript Coding </h1>
 
-    <script src="JS/Script.js"></script>
+    <div id="color-switcher">
+        <span class="btn" id="white" onclick="changeBG('#FFFFFF')"></span>
+        <span class="btn" id="aqua" onclick="changeBG('#7FFFD4')"></span>
+        <span class="btn" id="violet" onclick="changeBG('#8F00FF')"></span>
+        <span class="btn" id="black" onclick="changeBG('#000000')"></span>
+    </div>
+    
+    <h1 class="text"> Background Changer </h1>
+
+    <img src="../Image/6.jpg" alt="naruto">
+
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, aperiam sunt. Modi cum sint voluptatem odio iste aliquid autem a magni error laborum ullam earum quisquam quod atque architecto quam, cupiditate possimus incidunt consectetur aspernatur vero? Libero quia minima hic. Laboriosam animi quos ut suscipit fugiat aut recusandae explicabo iste consequuntur in incidunt autem a magnam tempora ex aspernatur distinctio neque aliquid, eligendi delectus velit deserunt exercitationem corporis! Fuga alias eos nam magni illum a dolore quibusdam aliquam laborum quasi corrupti quisquam doloremque, eligendi rerum consectetur autem accusantium reiciendis provident ipsam natus nobis? Id, autem. Reprehenderit voluptatibus quidem cumque sunt exercitationem eligendi natus sint dolor? Eum, praesentium voluptates est corrupti sed nesciunt assumenda doloremque sit distinctio, incidunt neque sunt modi voluptatibus autem, vel nam commodi ad placeat possimus! Blanditiis quibusdam, unde deserunt sit eius eaque cupiditate delectus id doloremque amet alias possimus aspernatur, architecto dolore ullam recusandae dolores repellat reiciendis earum? Quos numquam, corporis architecto, perferendis doloribus dolore expedita fuga deserunt inventore vel ducimus. Nemo corrupti ipsum eum consectetur id nulla iusto voluptatem? Ipsam maiores error soluta dolorem? Ipsum minima possimus in maxime assumenda corrupti molestiae, exercitationem rem id sapiente consectetur a placeat maiores saepe! Distinctio error ad laboriosam nihil ab dicta placeat dolore nulla quam cum pariatur temporibus culpa rerum maiores sunt nobis, aspernatur, praesentium expedita neque quos. Excepturi omnis temporibus quidem maxime beatae dignissimos, autem, consectetur qui consequatur sapiente sequi. Doloribus ipsam provident voluptate minima dolor. Odit consequatur distinctio ab placeat aliquam laboriosam dolorem, reprehenderit, odio a officiis quisquam assumenda aliquid itaque mollitia nostrum officia quo minus veritatis pariatur deserunt explicabo quis maxime magni ipsam? Culpa deserunt porro mollitia doloribus quis at saepe, quibusdam maiores aliquam similique totam soluta suscipit vitae eos voluptates numquam! Quae consectetur, amet nesciunt assumenda illum ex fuga facilis, architecto natus nulla veniam autem quasi alias aut exercitationem, sed minus sint vitae optio sapiente odio illo repellendus doloremque. Eaque ipsam in adipisci illo ex officiis tempore cumque, quod fugit voluptate iste impedit. Repellat laborum sequi magni est a ipsam quae vel, nam velit atque optio facilis aut quis quaerat maiores aliquam sint cupiditate. Facere, sequi sint accusantium blanditiis et sunt a quisquam expedita molestias enim. Possimus quia expedita dolore, aspernatur voluptatum sequi minus, ratione corporis alias, suscipit illo officia! Cumque adipisci aliquam doloribus officiis cupiditate excepturi ex culpa, commodi qui aut velit voluptatibus incidunt aspernatur obcaecati totam optio, asperiores, beatae hic laboriosam aperiam debitis consectetur corrupti accusantium. Id eligendi odit error. Nulla nisi autem nostrum aut quam, est veniam unde at libero nam aperiam ex totam alias ut neque culpa commodi. Deleniti sit, suscipit eos nam exercitationem cumque aliquid laudantium voluptatum commodi magnam vel ad neque labore dolores, laborum iure unde obcaecati consectetur reprehenderit corporis necessitatibus. Iste ab voluptatem ipsam dignissimos nihil, in sunt eius nulla explicabo quia sed corrupti soluta nisi obcaecati totam, tenetur doloremque molestiae sit? Cumque enim unde ipsa reprehenderit odio ea temporibus perspiciatis ipsam! Fugiat cum ullam consequuntur, animi quod ipsum incidunt, magni quidem quis, omnis similique nemo perspiciatis. Quos.</p>
+
+    <script>
+        function changeBG(color){
+            document.body.style.backgroundColor = color;
+            let text = document.getElementsByClassName("text");
+            if(color == "#000000"){
+                for(let elm of text){
+                    elm.style.color = "white";
+                }
+            }else{
+                for(let elm of text){
+                    elm.style.color = "black";
+                }
+            }
+        }
+    </script>
 </body>
 </html>
