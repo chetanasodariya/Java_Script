@@ -10,6 +10,30 @@
     
     <h1> Welcome to JavaScript Coding </h1>
 
-    <script src="JS/Script.js"></script>
+    <script>
+        function sum(a, b){
+            return a + b;
+        }
+
+        sum(2, 3);
+        sum(2, 3, 5);
+        sum(2, 3, 5, 2);
+
+        function sum1(...args){
+            let result = 0;
+
+            for(let i = 0; i < args.length; i++){
+                result += args[i];
+            }
+
+            console.log(result);
+        }
+
+        sum1();
+        sum1(2);
+        sum1(2, 5);
+        sum1(2, 5, 8);
+        sum1(2, 5, 8, 4);
+    </script>
 </body>
 </html>

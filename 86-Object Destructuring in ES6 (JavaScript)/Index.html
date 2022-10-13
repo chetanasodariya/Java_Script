@@ -10,6 +10,27 @@
     
     <h1> Welcome to JavaScript Coding </h1>
 
-    <script src="JS/Script.js"></script>
+    <script>
+        let book = {
+            name : "Advance js",
+            page : 200,
+            price : 100,
+            publication : {
+                pub_name : "chetan",
+                year : 2001,
+            }
+        }
+
+        let {name : title, page, price = 150, publication : {pub_name : pub, year}} = book;
+
+        console.log(book);
+        console.log(name);
+        console.log(page);
+        console.log(price);
+        console.log(title);
+        console.log(pub_name);
+        console.log(year);
+        console.log(pub);
+    </script>
 </body>
 </html>

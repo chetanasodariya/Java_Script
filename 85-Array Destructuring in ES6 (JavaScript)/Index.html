@@ -10,6 +10,83 @@
     
     <h1> Welcome to JavaScript Coding </h1>
 
-    <script src="JS/Script.js"></script>
+    <script>
+        let book = ["Advance JS", 200, 150];
+
+        let name = book[0];
+        let pages = book[1];
+        let price = book[2];
+
+        console.log(book);
+        console.log(book[0]);
+        console.log(book[1]);
+        console.log(book[2]);
+        console.log(name);
+        console.log(pages);
+        console.log(price);
+
+        let book1 = ["Advance JS", 200, 150];
+        let[name1, pages1, price1] = book1;
+
+        console.log(book1);
+        console.log(name1);
+        console.log(pages1);
+        console.log(price1);
+
+        let book2 = ["Advance JS", 200, 150];
+        let[name2, pages2, price2, publication2] = book2;
+
+        console.log(book2);
+        console.log(name2);
+        console.log(pages2);
+        console.log(price2);
+        console.log(publication2);
+
+        let book3 = ["Advance JS", , 200, 150];
+        let[name3, pages3, price3, publication3] = book3;
+
+        console.log(book3);
+        console.log(name3);
+        console.log(pages3);
+        console.log(price3);
+        console.log(publication3);
+
+        let book4 = ["Advance JS", , 200, 150];
+        let[name4, pages4=500, price4, publication4] = book4;
+
+        console.log(book4);
+        console.log(name4);
+        console.log(pages4);
+        console.log(price4);
+        console.log(publication4);
+
+        let book5 = ["Advance JS", 100, 200, 150];
+        let[name5, pages5=500, price5, publication5] = book5;
+
+        console.log(book5);
+        console.log(name5);
+        console.log(pages5);
+        console.log(price5);
+        console.log(publication5);
+
+        let book6 = ["Advance JS", 100, 200, ["chetan", 2001]];
+        let[name6, pages6, price6, [publication6, year6]] = book6;
+
+        console.log(book6);
+        console.log(name6);
+        console.log(pages6);
+        console.log(price6);
+        console.log(publication6);
+        console.log(year6);
+
+        function book7(){
+            return ["Advance JS", 200];
+        }
+
+        let [book_title7, price7] = book7();
+
+        console.log(book_title7);
+        console.log(price7);
+    </script>
 </body>
 </html>
