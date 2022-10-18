@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="image" src="Pizigani_1367_Chart_10MB.jpg" alt="img">
+
+    <script>
+        window.addEventListener('DOMContentLoaded', function(){
+            console.log("DOM tree loaded");
+        });
+        let img = document.getElementById("image");
+        img.addEventListener('load', function(){
+            console.log("Fully loaded");
+        });
+    </script>
+</body>
+</html>
